@@ -43,7 +43,8 @@ footer {
     background-color: white;
     height: 120px;
     width: 80px;
-    border-radius: 10px;
+    border-radius: 20px;
+    cursor: default;
 }
 
 .boxes {
@@ -55,4 +56,5 @@ footer {
 .frase {
     display: flex;
     justify-content: baseline;
+    cursor: default;
 }
