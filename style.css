@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: darkolivegreen;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 200px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 70px;
+    display: flex;
+    justify-content: start;
+    margin-left: 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    width: 700px;
+}
+
+.image {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: start;
+    margin-left: 100px;
+}
+
+.box {
+    display: flex;
+    background-color: white;
+    height: 120px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.boxes {
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.frase {
+    display: flex;
+    justify-content: baseline;
+}
