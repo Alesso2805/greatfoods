@@ -45,6 +45,7 @@ footer {
     width: 80px;
     border-radius: 20px;
     cursor: default;
+    margin-right: 20px;
 }
 
 .boxes {
@@ -55,6 +56,6 @@ footer {
 
 .frase {
     display: flex;
-    justify-content: baseline;
-    cursor: default;
+    justify-items: end;
+    cursor: text;
 }
