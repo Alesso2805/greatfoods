@@ -21,61 +21,83 @@
         <a class="header" href="generate.html">Generate</a>
         <a class="header" href="login.html">Login</a>
     </nav>
+
     <div id="container"></div>
 
     <script>
-        var container = document.getElementById("container");
-        var divCount = 0;
+        let container = document.getElementById("container");
+        let divCount = 0;
 
         function createInputDiv() {
-            var inputDiv = document.createElement("div");
+            let inputDiv = document.createElement("div");
             inputDiv.className = "input-div";
 
-            var label = document.createElement("label");
+            let labelDiv = document.createElement("div");
+            labelDiv.className = "label-div";
+
+            let label = document.createElement("label");
             label.textContent = "Ingredient " + (divCount + 1);
+            labelDiv.appendChild(label);
 
-            var input = document.createElement("input");
+            let input = document.createElement("input");
+            input.className = "input-field";
             input.type = "text";
-            input.placeholder = "Enter text";
+            input.placeholder = "Ingrese ingrediente";
 
-            var buttonDiv = document.createElement("div");
+            let buttonDiv = document.createElement("div");
             buttonDiv.className = "button-div";
 
-            var addButton = document.createElement("button");
-            addButton.innerText = "Add Div";
+            let addButton = document.createElement("button");
+            addButton.className = "add-button";
+            addButton.innerText = "+";
             addButton.addEventListener("click", createInputDiv);
 
-            var removeButton = document.createElement("button");
-            removeButton.innerText = "Remove";
+            let removeButton = document.createElement("button");
+            removeButton.className = "remove-button";
+            removeButton.innerText = "-";
             removeButton.addEventListener("click", function() {
                 if (divCount > 1) {
                     container.removeChild(inputDiv);
                     divCount--;
                     updateLabels();
+                    updateButtons();
                 }
             });
 
-            buttonDiv.appendChild(addButton);
-            buttonDiv.appendChild(removeButton);
-            inputDiv.appendChild(label);
+            inputDiv.appendChild(labelDiv);
             inputDiv.appendChild(input);
             inputDiv.appendChild(buttonDiv);
             container.appendChild(inputDiv);
 
+            buttonDiv.appendChild(addButton);
+            buttonDiv.appendChild(removeButton);
             divCount++;
+
+            updateButtons();
         }
 
         createInputDiv();
 
         function updateLabels() {
-            var labels = document.querySelectorAll(".input-div label");
+            let labels = document.querySelectorAll(".input-div label");
             labels.forEach(function(label, index) {
                 label.textContent = "Ingredient " + (index + 1);
             });
         }
+
+        function updateButtons() {
+            let addButtons = document.querySelectorAll(".add-button");
+            addButtons.forEach(function(addButton, index) {
+                if (index === divCount - 1) {
+                    addButton.style.visibility = "visible";
+                } else {
+                    addButton.style.visibility = "hidden";
+                }
+            });
+        }
     </script>
 </body>
-<footer>
+<footer class="foot-gen">
     <img class="image" src="../images/facebook.svg" alt="">
     <img class="image" src="../images/twitter.svg" alt="">
     <img class="image" src="../images/instagram.svg" alt="">
