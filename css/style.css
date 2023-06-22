@@ -113,148 +113,10 @@ nav {
     margin-left: 100px;
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    margin: 0;
-}
-
-.paragraph {
-    font-weight: 700;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.paragraph2 {
-    font-size: 20px;
-    width: 670px;
-}
-
-.footer-about {
-    display: flex;
-    justify-content: start;
-    margin-left: 100px;
-    margin-top: 50px;
-}
-
-.login {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    margin: 0 0 20px 0;
-}
-
-.login-subbox {
-    width: 260px;
-    height: 240px;
-    background: #202020;
-    box-shadow: 0 4px 5px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 61px;
-    padding: 30px 35px 20px 35px;
-}
-
-
-#login {
-    width: 200px;
-    height: 45px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    background: #93A866;
-    border-radius: 41px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    color: white;
-}
-
-.login-box, .sign-box {
-    display: flex;
-    justify-content: center;
-}
-
-.foot-login {
-    display: flex;
-    justify-content: start;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-
-.register {
-    color: white;
-    font-weight: 800;
-}
-
-.username, .password {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 8px;
-    display: block;
-    border: none;
-    border-bottom: 1px solid white;
-    width: 90%;
-    background-color: #202020;
-    color: white;
-}
-
-.password {
-    margin-bottom: 30px;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.below {
-    display: flex;
-    justify-content: center;
-}
-
-.sign-subbox {
-    width: 815px;
-    height: 402px;
-    background: #202020;
-    box-shadow: 0 4px 5px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 61px;
-    padding: 30px 25px 20px 62px;
-    margin: 20px;
-}
-
-.form {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 860px;
-}
-
-.space {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 8px;
-    display: block;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid white;
-    width: 70%;
-    background-color: #202020;
-    color: white;
-}
-
-.foot-sign {
-    display: flex;
-    justify-content: start;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
 .input-div {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin: 30px 0 0 30px;
 }
 .label-div {
     display: flex;
@@ -264,14 +126,20 @@ nav {
     font-weight: 800;
 }
 .input-field {
-    border: none;
+    border: 2px solid #000000;
     border-radius: 20px;
-    color: black;
-    background: #347217;
+    color: #000000;
+    background: #4c743c;
     width: 20em;
     margin: 0 10px 0 10px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 15px;
     font-weight: 600;
+}
+
+.input-field::placeholder {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
 
 .button-div {
@@ -280,7 +148,7 @@ nav {
 }
 .add-button {
     border-radius: 50px;
-    border: none;
+    border: 2px solid #000000;
     margin: 0 20px 0 0;
     font-size: 24px;
     background: #4d753c;
@@ -290,8 +158,9 @@ nav {
 }
 .remove-button {
     border-radius: 50px;
-    border: none;
+    border: 2px solid #000000;
     font-size: 24px;
+    padding: 0 0 8px 0;
     background: #4d753c;
     width: 40px;
     height: 40px;
