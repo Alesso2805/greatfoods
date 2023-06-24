@@ -1,12 +1,16 @@
 body {
     margin: 0;
-    background-color: #94AA64;
+    background-color: #98a96a;
     font-family: 'Inter', sans-serif;
 }
 
 .logo {
     width: 300px;
     margin-right: 320px;
+}
+
+.container-header {
+    display: flex;
 }
 
 nav {
@@ -175,3 +179,226 @@ nav {
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 600px){
+
+    .container-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        margin: 0 0 30px 0;
+        width: 200px;
+    }
+
+    .container-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 10px 0;
+    }
+
+    nav {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: 50px 0 0 0;
+    }
+
+    .back {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 0;
+    }
+    .salad {
+        width: 250px;
+        position: static;
+        margin: 0;
+    }
+
+    .bandw {
+        display: none;
+    }
+
+    .main-text {
+        margin-left: 0;
+        font-size: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boxes  {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .box {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .container-main-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .foot-index {
+        margin: 0;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 50px 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1040px){
+
+    .container-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        margin: 0 0 30px 0;
+        width: 300px;
+    }
+
+    .container-header {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 10px 0;
+    }
+
+    nav {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: 50px 0 0 0;
+    }
+
+    .back {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 0;
+    }
+    .salad {
+        width: 250px;
+        position: static;
+        margin: 0;
+    }
+
+    .bandw {
+        display: none;
+    }
+
+    .main-text {
+        margin-left: 0;
+        font-size: 30px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boxes  {
+        margin: 20px 20px 50px 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+
+    .box {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .container-main-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .foot-index {
+        margin: 0;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 50px 0;
+    }
+}
+
+@media screen and (min-width: 1041px) and (max-width: 1400px){
+    .salad {
+        width: 320px;
+        margin-right: 150px;
+    }
+
+    .bandw {
+        width: 390px;
+    }
+
+    .container-nav{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .container-nav{
+        margin-bottom: 40px;
+    }
+
+    .main-text{
+        font-size: 60px;
+        width: 650px;
+    }
+
+    .box {
+        height: 170px;
+        width: 115px;
+    }
+
+    .round {
+        width: 70px;
+        height: 70px;
+    }
+
+    .foods {
+        font-size: 20px;
+    }
+
+    .frase {
+        font-size: 20px;
+    }
+
+    .logo {
+        margin-right: 650px;
+    }
+
+    .box {
+        border-radius: 30px;
+    }
+}
