@@ -32,6 +32,7 @@
 .login-box, .sign-box {
     display: flex;
     justify-content: center;
+    margin: 0 20px 0 20px;
 }
 
 .foot-login {
@@ -110,8 +111,6 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-
-    }
+.container-login {
+    margin-bottom: 50px;
 }

@@ -1,5 +1,5 @@
 
-    let container = document.getElementById("container");
+    let container = document.getElementById("container-ingredient");
     let divCount = 0;
 
     function createInputDiv() {
